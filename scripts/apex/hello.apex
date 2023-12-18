@@ -42,3 +42,36 @@ if (yearsWorked >= requiredYearsWorked){
 System.debug('Percent after swiitch ' + percent);
 
 
+//SCENARIO A store sells accessories for parties and special events. It prices its balloons based on their colors as there are colors that are more popular, and others that are harder to find, or more expensive to buy from its suppliers. A default price is applied for the rest of the colors. How can this scenario be translated using only one type of control flow in Apex?
+
+
+String color = 'gold dust';
+Decimal price = 0;
+System.debug('Baloon color ' = color );
+System.debug('Price before switch ' + price);
+
+switch on color {
+
+    when 'gold dust ', 'silver dust'{
+
+        price = 1.0;
+    }
+
+    when 'gold glossy', 'silver glossy'{
+
+        price = 0.75;
+    }
+
+    when else{
+        price = 0.5;
+    }
+
+
+
+
+
+    
+}
+
+System.debug('Price after switch ' + price);
+
