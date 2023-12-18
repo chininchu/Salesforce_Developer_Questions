@@ -47,12 +47,12 @@ System.debug('Percent after swiitch ' + percent);
 
 String color = 'gold dust';
 Decimal price = 0;
-System.debug('Baloon color ' = color );
+System.debug('Baloon color ' + color);
 System.debug('Price before switch ' + price);
 
 switch on color {
 
-    when 'gold dust ', 'silver dust'{
+    when 'gold dust', 'silver dust'{
 
         price = 1.0;
     }
@@ -74,4 +74,13 @@ switch on color {
 }
 
 System.debug('Price after switch ' + price);
+
+
+//A method returns a list of sObjects which object types are unknown beforehand as the object type is only determined during run-time. Once the type is determined, a field is updated for all the records. How can an Apex control flow be used to handle this requirement?
+
+// Let's instantiate an empty list that holds sObjects
+
+List<SObject> records = new List<SObject>();
+
+records.add([]);
 
